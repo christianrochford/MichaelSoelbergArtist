@@ -1,0 +1,64 @@
+
+// Modules and Variables
+@import "modules/colors";
+@import "partials/base";
+
+// Partials
+@import "partials/reset";
+@import "partials/typography";
+
+// Third-party
+
+
+//////////header//////////
+
+header{
+    background-color: $header-color;
+    width: 60%;
+    margin: 15% auto 0;
+    h1{
+        font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
+        font-size: 3em;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 20px 0 10px;
+    }
+}
+
+//////////nav//////////
+    nav{
+        ul{
+            width: 100%;
+            li{
+                width: 10%;
+                float: left;
+                margin: 10px 7.5%;
+                a{
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+//////////content//////////
+
+
+//////////footer//////////
+
+footer{
+    width: 98%;
+    position: absolute;
+    left: 1%;
+    bottom: 0;
+    border-top: 1px solid $text-color;
+    #copy{
+        text-transform: uppercase;
+        font-size: 0.6em;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+}
+
+

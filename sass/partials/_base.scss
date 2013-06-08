@@ -1,0 +1,42 @@
+
+//////////base-styles//////////
+
+body{
+    font-family: 'ComfortaaRegular', Arial, Helvetica, sans-serif;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+h1{
+    color: $heading-color;
+}
+
+a{
+    color: $text-color;
+    text-decoration: none;
+    &:hover, &:focus{
+        color: $text-color;
+        text-shadow: 1px 1px 1px pink;
+    }
+    &:visited{
+        color: $text-color;
+    }
+}
+
+//////////clear-fix//////////
+
+.clearfix:before,
+        .clearfix:after {
+          content: ".";
+          display: block;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            zoom: 1; /* IE < 8 */
+        }
