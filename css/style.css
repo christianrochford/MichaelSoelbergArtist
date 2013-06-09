@@ -181,13 +181,90 @@ nav ul {
     margin: 0.8em auto 0;
     line-height: 2em; }
 
-/* line 94, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
+#gallery {
+  width: 70%;
+  position: absolute;
+  top: 40px;
+  left: 30%; }
+  /* line 97, ../sass/style.scss */
+  #gallery .item {
+    width: 160px;
+    margin: 10px;
+    float: left; }
+    /* line 101, ../sass/style.scss */
+    #gallery .item img {
+      width: 100%; }
+
+/* line 110, ../sass/style.scss */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0; }
+
+/* line 122, ../sass/style.scss */
+.reveal-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 50%;
+  margin-left: -300px;
+  width: 520px;
+  background: #000;
+  position: absolute;
+  z-index: 101;
+  padding: 30px 40px 34px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
+/* line 140, ../sass/style.scss */
+.reveal-modal.small {
+  width: 200px;
+  margin-left: -140px; }
+
+/* line 141, ../sass/style.scss */
+.reveal-modal.medium {
+  width: 400px;
+  margin-left: -240px; }
+
+/* line 142, ../sass/style.scss */
+.reveal-modal.large {
+  width: 600px;
+  margin-left: -340px; }
+
+/* line 143, ../sass/style.scss */
+.reveal-modal.xlarge {
+  width: 800px;
+  margin-left: -440px; }
+
+/* line 145, ../sass/style.scss */
+.reveal-modal .close-reveal-modal {
+  font-size: 22px;
+  line-height: .5;
+  position: absolute;
+  top: 8px;
+  right: 11px;
+  color: #aaa;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer; }
+
+/* line 159, ../sass/style.scss */
 footer {
   width: 20%;
   min-width: 250px;
   position: absolute;
   bottom: 0; }
-  /* line 99, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   footer #copy {
     text-transform: uppercase;
     font-size: 0.6em;
