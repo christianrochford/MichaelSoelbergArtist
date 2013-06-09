@@ -1,25 +1,34 @@
-/* line 4, ../sass/partials/_base.scss */
+/* line 61, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%; }
+
+/* line 64, ../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em; }
+
+/* line 13, ../sass/partials/_base.scss */
 body {
   font-family: 'ComfortaaRegular', Arial, Helvetica, sans-serif;
   color: #a7a7a7;
-  background-color: #cccccc; }
+  background-color: white; }
 
-/* line 10, ../sass/partials/_base.scss */
+/* line 19, ../sass/partials/_base.scss */
 h1 {
   color: #484848; }
 
-/* line 14, ../sass/partials/_base.scss */
+/* line 23, ../sass/partials/_base.scss */
 a {
   color: #a7a7a7;
   text-decoration: none; }
-  /* line 17, ../sass/partials/_base.scss */
+  /* line 26, ../sass/partials/_base.scss */
   a:hover, a:focus {
     color: #484848; }
-  /* line 20, ../sass/partials/_base.scss */
+  /* line 29, ../sass/partials/_base.scss */
   a:visited {
     color: #a7a7a7; }
 
-/* line 28, ../sass/partials/_base.scss */
+/* line 37, ../sass/partials/_base.scss */
 .clearfix:before,
 .clearfix:after {
   content: ".";
@@ -27,11 +36,11 @@ a {
   height: 0;
   overflow: hidden; }
 
-/* line 35, ../sass/partials/_base.scss */
+/* line 44, ../sass/partials/_base.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 39, ../sass/partials/_base.scss */
+/* line 48, ../sass/partials/_base.scss */
 .clearfix {
   zoom: 1;
   /* IE < 8 */ }
@@ -116,14 +125,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 27, ../sass/style.scss */
 header {
   background-color: white;
-  width: 250px;
-  min-height: 100%;
-  height: auto;
-  position: fixed;
+  width: 20%;
+  min-width: 250px;
+  height: 100%;
+  border-right: 1px solid #a7a7a7;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0.8; }
-  /* line 36, ../sass/style.scss */
+  /* line 37, ../sass/style.scss */
   header h1 {
     font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
     font-size: 3em;
@@ -131,35 +141,53 @@ header {
     text-align: center;
     padding: 50px 0; }
 
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 nav ul {
   margin: 0 auto; }
-  /* line 50, ../sass/style.scss */
+  /* line 51, ../sass/style.scss */
   nav ul li a {
     display: block;
     width: 30%;
     margin: 50px 35%;
     text-align: center; }
-    /* line 55, ../sass/style.scss */
+    /* line 56, ../sass/style.scss */
     nav ul li a:hover, nav ul li a:focus {
       color: #484848; }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 #fullscreen {
   min-height: 100%;
   width: 100%;
   height: auto;
   position: fixed;
   top: 0;
-  left: 0;
-  opacity: 0.5; }
+  left: 0; }
 
-/* line 77, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
+#about, #contact {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  margin-top: 170px; }
+  /* line 81, ../sass/style.scss */
+  #about h2, #contact h2 {
+    font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
+    font-size: 1.875em;
+    line-height: 1.6em;
+    color: #484848; }
+  /* line 86, ../sass/style.scss */
+  #about p, #contact p {
+    margin: 0.8em auto 0;
+    line-height: 2em; }
+
+/* line 94, ../sass/style.scss */
 footer {
-  width: 250px;
+  width: 20%;
+  min-width: 250px;
   position: absolute;
   bottom: 0; }
-  /* line 81, ../sass/style.scss */
+  /* line 99, ../sass/style.scss */
   footer #copy {
     text-transform: uppercase;
     font-size: 0.6em;
