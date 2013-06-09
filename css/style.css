@@ -115,42 +115,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, ../sass/style.scss */
 header {
-  width: 100%; }
-  /* line 29, ../sass/style.scss */
-  header #header-content {
-    width: 40%;
-    margin: 15% 30% 0;
-    background-color: white;
-    height: 120px;
-    position: absolute;
-    top: 200;
-    left: 0;
-    opacity: 0.8; }
-  /* line 39, ../sass/style.scss */
+  background-color: white;
+  width: 250px;
+  min-height: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.8; }
+  /* line 36, ../sass/style.scss */
   header h1 {
     font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
     font-size: 3em;
     text-transform: uppercase;
     text-align: center;
-    padding: 20px 0; }
+    padding: 50px 0; }
 
-/* line 50, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 nav ul {
-  width: 100%; }
-  /* line 52, ../sass/style.scss */
-  nav ul li {
-    width: 10%;
-    float: left;
-    margin: 0px 7.5%; }
-    /* line 56, ../sass/style.scss */
-    nav ul li a {
-      display: block;
-      text-align: center; }
-      /* line 59, ../sass/style.scss */
-      nav ul li a:hover, nav ul li a:focus {
-        color: #484848; }
+  margin: 0 auto; }
+  /* line 50, ../sass/style.scss */
+  nav ul li a {
+    display: block;
+    width: 30%;
+    margin: 50px 35%;
+    text-align: center; }
+    /* line 55, ../sass/style.scss */
+    nav ul li a:hover, nav ul li a:focus {
+      color: #484848; }
 
-/* line 69, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 #fullscreen {
   min-height: 100%;
   width: 100%;
@@ -160,15 +154,14 @@ nav ul {
   left: 0;
   opacity: 0.5; }
 
-/* line 81, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 footer {
-  width: 98%;
+  width: 240px;
   position: absolute;
-  left: 1%;
+  left: 5px;
   bottom: 0;
-  border-top: 1px solid #a7a7a7;
-  box-shadow: 0px -1px 0px white; }
-  /* line 88, ../sass/style.scss */
+  border-top: 1px solid #a7a7a7; }
+  /* line 83, ../sass/style.scss */
   footer #copy {
     text-transform: uppercase;
     font-size: 0.6em;
