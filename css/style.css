@@ -156,12 +156,10 @@ nav ul {
 
 /* line 77, ../sass/style.scss */
 footer {
-  width: 240px;
+  width: 250px;
   position: absolute;
-  left: 5px;
-  bottom: 0;
-  border-top: 1px solid #a7a7a7; }
-  /* line 83, ../sass/style.scss */
+  bottom: 0; }
+  /* line 81, ../sass/style.scss */
   footer #copy {
     text-transform: uppercase;
     font-size: 0.6em;
