@@ -11,26 +11,46 @@
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
 <body>
-    
-    <header>
-        <h1>Michael Soelberg</h1>
-        <nav>
-            <ul class="clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <img src="img/Received.jpg" id="fullscreen">
+    <header id="header">
+        <div id="header-content">
+            <h1>Michael Soelberg</h1>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="index.html" class="nav-anchor">Home</a></li>
+                    <li><a href="#about" class="nav-anchor">About</a></li>
+                    <li><a href="#work" class="nav-anchor">Work</a></li>
+                    <li><a href="#contact" class="nav-anchor">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <section id="gallery">
+    <section id="about">
+        
+    </section>
+    
+    <section id="work">
+    
+    </section>
+    
+    <section id="contact">
         
     </section>
     
     <footer>
         <p id="copy">Copyright &copy;2013</p>
     </footer>
+    
+    <script>
+            $(document).ready(function() {
+
+                $('.nav-anchor').click(function() {
+                    $('#header').animate({width:'100%'}, 500)
+                });
+
+            });
+    </script>
     
 </body>
 </html>

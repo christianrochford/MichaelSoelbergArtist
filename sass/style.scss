@@ -10,18 +10,38 @@
 // Third-party
 
 
+// Media-Queries
+@mixin breakpoint($point) {
+  @if $point == ganzgross {
+    @media (max-width: 1600px) { @content; }
+  }
+  @else if $point == gross {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == mittelgross {
+    @media (max-width: 650px)  { @content; }
+  }
+}
 //////////header//////////
 
 header{
-    background-color: $header-color;
-    width: 60%;
-    margin: 15% auto 0;
+    width: 100%;
+    #header-content{
+        width: 40%;
+        margin: 15% 30% 0;
+        background-color: $header-color;
+        height: 120px;
+        position: absolute;
+        top:200;
+        left: 0;
+        opacity: 0.8;//add ie fix
+    }
     h1{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         font-size: 3em;
         text-transform: uppercase;
         text-align: center;
-        padding: 20px 0 10px;
+        padding: 20px 0;
     }
 }
 
@@ -32,10 +52,13 @@ header{
             li{
                 width: 10%;
                 float: left;
-                margin: 10px 7.5%;
+                margin: 0px 7.5%;
                 a{
                     display: block;
                     text-align: center;
+                    &:hover, &:focus{
+                        color: $heading-color;
+                    }
                 }
             }
         }
@@ -43,6 +66,15 @@ header{
 
 //////////content//////////
 
+#fullscreen{
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.5;//add ie fix
+}
 
 //////////footer//////////
 
@@ -52,6 +84,7 @@ footer{
     left: 1%;
     bottom: 0;
     border-top: 1px solid $text-color;
+    box-shadow: 0px -1px 0px $header-color;
     #copy{
         text-transform: uppercase;
         font-size: 0.6em;
