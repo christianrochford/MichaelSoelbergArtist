@@ -72,7 +72,7 @@
             </a>
             <a href="#" data-reveal-id="11">
                 <div class="item">
-                    <img src="img/Innamorato di una vita vuota.png">
+                    <img src="img/Innamorato-di-una-vita-vuota.png">
                 </div>
             </a>
             <a href="#" data-reveal-id="12">
