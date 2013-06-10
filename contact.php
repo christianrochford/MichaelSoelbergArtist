@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Michael Soelberg | Artist</title>
+    <title>Michael Soelberg | Contact</title>
     
     <meta name="description" content="The work of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">

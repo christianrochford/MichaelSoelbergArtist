@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Michael Soelberg | Artist</title>
+    <title>Michael Soelberg | Gallery</title>
     
     <meta name="description" content="The work of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -20,132 +20,132 @@
     
         <div id="container">
             
-            <a href="#" data-reveal-id="A-Blessed-Curse">
+            <a href="#" data-reveal-id="1">
                 <div class="item">
                     <img src="img/A-Blessed-Curse.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Accept.-Receive.-Yes.-(Seal-you-his)">
+            <a href="#" data-reveal-id="2">
                 <div class="item">
                     <img src="img/Accept.-Receive.-Yes.-(Seal-you-his).png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Acting-no-deception">
+            <a href="#" data-reveal-id="3">
                 <div class="item">
                     <img src="img/Acting-no-deception.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Again-and-Again">
+            <a href="#" data-reveal-id="4">
                 <div class="item">
                     <img src="img/Again-and-Again.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="All-the-arms-around-me,-the-darkness-came.-(Seal-you-his)">
+            <a href="#" data-reveal-id="5">
                 <div class="item">
                     <img src="img/All-the-arms-around-me,-the-darkness-came.-(Seal-you-his).png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Caught-the-fire">
+            <a href="#" data-reveal-id="6">
                 <div class="item">
                     <img src="img/Caught-the-fire.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Come-Home1">
+            <a href="#" data-reveal-id="7">
                 <div class="item">
                     <img src="img/Come-Home1.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Goodbye;-Go-Live">
+            <a href="#" data-reveal-id="8">
                 <div class="item">
                     <img src="img/Goodbye;-Go-Live.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="I-take-your-hand">
+            <a href="#" data-reveal-id="9">
                 <div class="item">
                     <img src="img/I-take-your-hand.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="I'm-in-here">
+            <a href="#" data-reveal-id="10">
                 <div class="item">
                     <img src="img/I'm-in-here.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Innamorato di una vita vuota">
+            <a href="#" data-reveal-id="11">
                 <div class="item">
                     <img src="img/Innamorato di una vita vuota.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Killdeer">
+            <a href="#" data-reveal-id="12">
                 <div class="item">
                     <img src="img/Killdeer.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="La-mia-luce">
+            <a href="#" data-reveal-id="13">
                 <div class="item">
                     <img src="img/La-mia-luce.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Mid-Monday-Morning-Meditation-Meltdown">
+            <a href="#" data-reveal-id="14">
                 <div class="item">
                     <img src="img/Mid-Monday-Morning-Meditation-Meltdown.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Move-on,-nothing-to-see-here">
+            <a href="#" data-reveal-id="15">
                 <div class="item">
                     <img src="img/Move-on,-nothing-to-see-here.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="My-eyes-won't-see">
+            <a href="#" data-reveal-id="16">
                 <div class="item">
                     <img src="img/My-eyes-won't-see.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="No-Fear-(Chicken-Head)">
+            <a href="#" data-reveal-id="17">
                 <div class="item">
                     <img src="img/No-Fear-(Chicken-Head).png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="No-signs-of-pain">
+            <a href="#" data-reveal-id="18">
                 <div class="item">
                     <img src="img/No-signs-of-pain.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Non-temere">
+            <a href="#" data-reveal-id="19">
                 <div class="item">
                     <img src="img/Non-temere.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Received">
+            <a href="#" data-reveal-id="20">
                 <div class="item">
                     <img src="img/Received.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Simple-and-Content">
+            <a href="#" data-reveal-id="21">
                 <div class="item">
                     <img src="img/Simple-and-Content.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="The-Gifted">
+            <a href="#" data-reveal-id="22">
                 <div class="item">
                     <img src="img/The-Gifted.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Unbeguiled">
+            <a href="#" data-reveal-id="23">
                 <div class="item">
                     <img src="img/Unbeguiled.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Under-Construction">
+            <a href="#" data-reveal-id="24">
                 <div class="item">
                     <img src="img/Under-Construction.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Unnoticed">
+            <a href="#" data-reveal-id="25">
                 <div class="item">
                     <img src="img/Unnoticed.png">
                 </div>
             </a>
-            <a href="#" data-reveal-id="Up-Above">
+            <a href="#" data-reveal-id="26">
                 <div class="item">
                     <img src="img/Up-Above.png">
                 </div> 
@@ -159,138 +159,139 @@
     
     <!--modals-->
 
-    <div id="A-Blessed-Curse" class="reveal-modal">
+    <div id="1" class="reveal-modal">
         <h1>A Blessed Curse</h1>
             <img src="img/A-Blessed-Curse.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Accept.-Receive.-Yes.-(Seal-you-his)" class="reveal-modal">
+    <div id="2" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Accept.-Receive.-Yes.-(Seal-you-his).png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Acting-no-deception" class="reveal-modal">
+    <div id="3" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Acting-no-deception.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Again-and-Again" class="reveal-modal">
+    <div id="4" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Again-and-Again.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="All-the-arms-around-me,-the-darkness-came.-(Seal-you-his)" class="reveal-modal">
+    <div id="5" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/All-the-arms-around-me,-the-darkness-came.-(Seal-you-his).png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Caught-the-fire" class="reveal-modal">
+    <div id="6" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Caught-the-fire.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Come-Home1" class="reveal-modal">
+    <div id="7" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Come-Home1.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Goodbye;-Go-Live" class="reveal-modal">
+    <div id="8" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Goodbye;-Go-Live.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="I-take-your-hand" class="reveal-modal">
+    <div id="9" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/I-take-your-hand.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="I'm-in-here" class="reveal-modal">
+    <div id="10" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/I'm-in-here.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Innamorato-di-una-vita-vuota" class="reveal-modal">
+    <div id="11" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Innamorato-di-una-vita-vuota.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Killdeer" class="reveal-modal">
+    <div id="12" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Killdeer.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="La-mia-luce" class="reveal-modal">
+    <div id="13" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/La-mia-luce.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Mid-Monday-Morning-Meditation-Meltdown" class="reveal-modal">
+    <div id="14" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Mid-Monday-Morning-Meditation-Meltdown.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Move-on,-nothing-to-see-here" class="reveal-modal">
+    <div id="15" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Move-on,-nothing-to-see-here.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="My-eyes-won't-see" class="reveal-modal">
+    <div id="16" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/My-eyes-won't-see.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="mNo-Fear-(Chicken-Head)" class="reveal-modal">
+    <div id="17" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/No-Fear-(Chicken-Head).png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="No-signs-of-pain" class="reveal-modal">
+    <div id="18" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/No-signs-of-pain.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Non-temere" class="reveal-modal">
+    <div id="19" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Non-temere.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Received" class="reveal-modal">
+    <div id="20" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Received.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Simple-and-Content" class="reveal-modal">
+    <div id="21" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Simple-and-Content.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="The-Gifted" class="reveal-modal">
+    <div id="22" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/The-Gifted.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Unbeguiled" class="reveal-modal">
+    <div id="23" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Unbeguiled.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Under-Construction" class="reveal-modal">
+    <div id="24" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Under-Construction.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Unnoticed" class="reveal-modal">
+    <div id="25" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Unnoticed.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
-    <div id="Up-Above" class="reveal-modal">
+    <div id="26" class="reveal-modal">
         <h1>Modal Title</h1>
             <img src="img/Up-Above.png">
         <a class="close-reveal-modal">&#215;</a>
     </div>
 
-    <script src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery1.10.1.js"></script>
+    <script src="js/jQueryMigrate1.2.1.js"></script>
     <script src="js/jquery.reveal.js"></script>
     <script src="js/masonry2.1.08.js"></script>
 

@@ -19,7 +19,7 @@
     @media (max-width: 1250px) { @content; }
   }
   @else if $point == mittelgross {
-    @media (max-width: 650px)  { @content; }
+    @media (max-width: 800px)  { @content; }
   }
 }
 //////////header//////////
@@ -93,7 +93,7 @@ header{
     width: 70%;
     position: absolute;
     top: 40px;
-    left: 30%;
+    left: 350px;
     .item {
     width: 160px;
     margin: 10px;
