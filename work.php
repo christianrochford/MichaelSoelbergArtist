@@ -158,137 +158,138 @@
     <?php include 'php/inc/footer.inc.php'; ?>
     
     <!--modals-->
-
-    <div id="1" class="reveal-modal">
-        <h1>A Blessed Curse</h1>
-            <img src="img/A-Blessed-Curse.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="2" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Accept.-Receive.-Yes.-(Seal-you-his).png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="3" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Acting-no-deception.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="4" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Again-and-Again.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="5" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/All-the-arms-around-me,-the-darkness-came.-(Seal-you-his).png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="6" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Caught-the-fire.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="7" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Come-Home1.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="8" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Goodbye;-Go-Live.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="9" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/I-take-your-hand.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="10" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/I'm-in-here.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="11" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Innamorato-di-una-vita-vuota.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="12" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Killdeer.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="13" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/La-mia-luce.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="14" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Mid-Monday-Morning-Meditation-Meltdown.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="15" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Move-on,-nothing-to-see-here.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="16" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/My-eyes-won't-see.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="17" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/No-Fear-(Chicken-Head).png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="18" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/No-signs-of-pain.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="19" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Non-temere.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="20" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Received.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="21" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Simple-and-Content.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="22" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/The-Gifted.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="23" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Unbeguiled.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="24" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Under-Construction.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="25" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Unnoticed.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
-    <div id="26" class="reveal-modal">
-        <h1>Modal Title</h1>
-            <img src="img/Up-Above.png">
-        <a class="close-reveal-modal">&#215;</a>
-    </div>
+    <div class="modal-content">
+        <div id="1" class="reveal-modal">
+            <h1>A Blessed Curse</h1>
+                <img src="img/A-Blessed-Curse.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="2" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Accept.-Receive.-Yes.-(Seal-you-his).png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="3" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Acting-no-deception.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="4" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Again-and-Again.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="5" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/All-the-arms-around-me,-the-darkness-came.-(Seal-you-his).png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="6" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Caught-the-fire.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="7" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Come-Home1.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="8" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Goodbye;-Go-Live.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="9" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/I-take-your-hand.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="10" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/I'm-in-here.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="11" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Innamorato-di-una-vita-vuota.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="12" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Killdeer.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="13" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/La-mia-luce.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="14" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Mid-Monday-Morning-Meditation-Meltdown.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="15" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Move-on,-nothing-to-see-here.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="16" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/My-eyes-won't-see.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="17" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/No-Fear-(Chicken-Head).png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="18" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/No-signs-of-pain.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="19" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Non-temere.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="20" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Received.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="21" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Simple-and-Content.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="22" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/The-Gifted.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="23" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Unbeguiled.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="24" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Under-Construction.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="25" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Unnoticed.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+        <div id="26" class="reveal-modal">
+            <h1>Modal Title</h1>
+                <img src="img/Up-Above.png">
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div><!--modal-content-->
 
     <script src="js/jquery1.10.1.js"></script>
     <script src="js/jQueryMigrate1.2.1.js"></script>

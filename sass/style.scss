@@ -21,6 +21,15 @@
   @else if $point == mittelgross {
     @media (max-width: 800px)  { @content; }
   }
+  @else if $point == klein {
+    @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == ganzklein {
+    @media (max-width: 480px)  { @content; }
+  }
+  @else if $point == totalklein {
+    @media (max-width: 320px)  { @content; }
+  }
 }
 //////////header//////////
 
@@ -29,17 +38,21 @@ header{
     width: 20%;
     min-width: 250px;
     height: 100%;
-    border-right: 1px solid $text-color;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0.8;//add ie fix
+    @include breakpoint(klein) {width: 100%;
+                                height: 100px;
+                            }
     h1{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         font-size: 3em;
         text-transform: uppercase;
         text-align: center;
         padding: 50px 0;
+        @include breakpoint(klein) {
+                                    padding: 20px 0 0;}
     }
 }
 
@@ -48,11 +61,17 @@ header{
         ul{
             margin: 0 auto;
             li{
+                @include breakpoint(klein) {float: left;
+                                            width: 25%;}
                 a{
                     display: block;
                     width: 30%;
                     margin: 50px 35%;
                     text-align: center;
+                    @include breakpoint(klein) {
+                                                @include adjust-font-size-to(20px);
+                                                width: 25%;
+                                                margin: 10px auto;}
                     &:hover, &:focus{
                         color: $heading-color;
                     }
@@ -78,14 +97,20 @@ header{
     top: 0;
     right: 15%;
     margin-top: 170px;
+    @include breakpoint(klein) {width: 80%;
+                                right: 10%;
+                                margin-top: 150px;}
     h2{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         @include adjust-font-size-to(30px);
         color: $heading-color;
+        @include breakpoint(klein) {@include adjust-font-size-to(32px);}
     }
     p{
         margin: rhythm(1, 30px) auto 0;
         line-height: 2em;
+        @include breakpoint(klein) {@include adjust-font-size-to(24px);
+                                    line-height: 1.5em;}
     }
 }
 
@@ -94,10 +119,17 @@ header{
     position: absolute;
     top: 40px;
     left: 350px;
+    @include breakpoint(klein) {
+                                width: 90%;
+                                top: 140px;
+                                left: 5%;}
     .item {
     width: 160px;
-    margin: 10px;
+    margin: 1%;
     float: left;
+    @include breakpoint(klein) {
+                                width: 96%;
+                                margin: 2%;}
     img{
         width: 100%;
     }
@@ -107,12 +139,19 @@ header{
 
 //////////modals//////////
 
+.modal-content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
 .reveal-modal-bg { 
         position: fixed; 
         height: 100%;
         width: 100%;
-        background: #000;
-        background: rgba(0,0,0,.8);
+        background: $background-color;
+        background: rgba(0,0,0,.9);
         z-index: 100;
         display: none;
         top: 0;
@@ -122,32 +161,22 @@ header{
     .reveal-modal {
         visibility: hidden;
         top: 100px; 
-        left: 50%;
-        margin-left: -300px;
-        width: 520px;
-        background: #000;
+        left: 0;
+        width: 50%;
+        margin: 0 25%;
         position: absolute;
         z-index: 101;
-        padding: 30px 40px 34px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        -moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
-        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
-        -box-shadow: 0 0 10px rgba(0,0,0,.4);
+        img{
+            width: 100%;
         }
-        
-    .reveal-modal.small         { width: 200px; margin-left: -140px;}
-    .reveal-modal.medium        { width: 400px; margin-left: -240px;}
-    .reveal-modal.large         { width: 600px; margin-left: -340px;}
-    .reveal-modal.xlarge        { width: 800px; margin-left: -440px;}
+        }
     
     .reveal-modal .close-reveal-modal {
         font-size: 22px;
         line-height: .5;
         position: absolute;
-        top: 8px;
-        right: 11px;
+        top: 0;
+        right: 0;
         color: #aaa;
         text-shadow: 0 -1px 1px rbga(0,0,0,.6);
         font-weight: bold;
