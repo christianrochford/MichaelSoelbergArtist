@@ -12,9 +12,12 @@
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
 <body>
-    <img src="img/Received.png" id="fullscreen">
     
     <?php include 'php/inc/header.inc.php'; ?>
+    
+    <section>
+        <img src="img/Received.png" id="fullscreen">
+    </section>
     
     <?php include 'php/inc/footer.inc.php'; ?>
     

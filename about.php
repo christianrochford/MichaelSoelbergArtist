@@ -11,7 +11,7 @@
     
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
-<body>
+<body id="about-content">
     
     <?php include 'php/inc/header.inc.php'; ?>
     

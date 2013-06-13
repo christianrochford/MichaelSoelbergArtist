@@ -12,7 +12,7 @@
     
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
-<body>
+<body id="work-content">
     
     <?php include 'php/inc/header.inc.php'; ?>
     
@@ -165,127 +165,127 @@
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="2" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Accept. Receive. Yes. (Seal you his)</h1>
                 <img src="img/Accept.-Receive.-Yes.-(Seal-you-his).png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="3" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Acting No Deception</h1>
                 <img src="img/Acting-no-deception.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="4" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Again and Again</h1>
                 <img src="img/Again-and-Again.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="5" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>All The Arms Around Me, The Darkness Came. (Seal you his)</h1>
                 <img src="img/All-the-arms-around-me,-the-darkness-came.-(Seal-you-his).png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="6" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Caught The Fire</h1>
                 <img src="img/Caught-the-fire.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="7" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Come Home1</h1>
                 <img src="img/Come-Home1.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="8" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Goodbye; Go Live</h1>
                 <img src="img/Goodbye;-Go-Live.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="9" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>I Take Your Hand</h1>
                 <img src="img/I-take-your-hand.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="10" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>I'm In Here</h1>
                 <img src="img/I'm-in-here.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="11" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Innamorato Di Una Vita Vuota</h1>
                 <img src="img/Innamorato-di-una-vita-vuota.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="12" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Killdeer</h1>
                 <img src="img/Killdeer.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="13" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>La Mia Luce</h1>
                 <img src="img/La-mia-luce.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="14" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Mid Monday Morning Meditation Meltdown</h1>
                 <img src="img/Mid-Monday-Morning-Meditation-Meltdown.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="15" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Move On, Nothing To See Here</h1>
                 <img src="img/Move-on,-nothing-to-see-here.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="16" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>My Eyes Won't See</h1>
                 <img src="img/My-eyes-won't-see.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="17" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>No Fear (Chicken Head)</h1>
                 <img src="img/No-Fear-(Chicken-Head).png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="18" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>No Signs Of Pain</h1>
                 <img src="img/No-signs-of-pain.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="19" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Non Temere</h1>
                 <img src="img/Non-temere.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="20" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Received</h1>
                 <img src="img/Received.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="21" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Simple and Content</h1>
                 <img src="img/Simple-and-Content.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="22" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>The Gifted</h1>
                 <img src="img/The-Gifted.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="23" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Unbeguiled</h1>
                 <img src="img/Unbeguiled.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="24" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Under Construction</h1>
                 <img src="img/Under-Construction.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="25" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Unnoticed</h1>
                 <img src="img/Unnoticed.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>
         <div id="26" class="reveal-modal">
-            <h1>Modal Title</h1>
+            <h1>Up Above</h1>
                 <img src="img/Up-Above.png">
             <a class="close-reveal-modal">&#215;</a>
         </div>

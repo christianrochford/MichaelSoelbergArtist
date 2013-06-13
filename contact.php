@@ -18,7 +18,7 @@
     <section id="contact">
         <h2>Contact Me:</h2>
         <p>For enquiries please feel free to send me a message</p>
-        <p>Send me an <a href="email:midasmidas@gmail.com">email</a>.</p>
+        <p>Send me an <a href="mailto:midasmidas@gmail.com">email</a>.</p>
     </section>
     
     <?php include 'php/inc/footer.inc.php'; ?>

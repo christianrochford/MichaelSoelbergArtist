@@ -21,10 +21,10 @@ h1{
 }
 
 a{
-    color: $text-color;
+    color: $heading-color;
     text-decoration: none;
     &:hover, &:focus{
-        color: $heading-color;
+        text-decoration: underline;
     }
     &:visited{
         color: $text-color;
