@@ -16,10 +16,11 @@
     <?php include 'php/inc/header.inc.php'; ?>
     
     <section id="login">
+        <h2>Please Login:</h2>
         <form action="#" method="post">
-            <label id="Username">Username:</label>
+            <label for="Username">Username:</label>
             <input id="Username" name="Username">
-            <label id="Password">Password:</label>
+            <label for="Password">Password:</label>
             <input id="Password" name="Password">
         </form>
     </section>

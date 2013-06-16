@@ -188,7 +188,7 @@ nav ul {
   z-index: -1; }
 
 /* line 99, ../sass/style.scss */
-#about, #contact {
+#about, #contact, #login {
   width: 50%;
   position: absolute;
   top: 0;
@@ -196,62 +196,72 @@ nav ul {
   margin-top: 170px; }
   @media (max-width: 650px) {
     /* line 99, ../sass/style.scss */
-    #about, #contact {
+    #about, #contact, #login {
       width: 80%;
       position: relative;
       right: 0;
       margin: 100px 10% 0; } }
   /* line 110, ../sass/style.scss */
-  #about h2, #contact h2 {
+  #about h2, #contact h2, #login h2 {
     font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
     font-size: 1.875em;
     line-height: 1.6em;
     color: #484848; }
     @media (max-width: 650px) {
       /* line 110, ../sass/style.scss */
-      #about h2, #contact h2 {
+      #about h2, #contact h2, #login h2 {
         font-size: 2em;
         line-height: 1.5em; } }
   /* line 116, ../sass/style.scss */
-  #about p, #contact p {
+  #about p, #contact p, #login p {
     margin: 0.8em auto 0;
     line-height: 2em; }
     @media (max-width: 650px) {
       /* line 116, ../sass/style.scss */
-      #about p, #contact p {
+      #about p, #contact p, #login p {
         font-size: 1.5em;
         line-height: 2em;
         line-height: 1.5em; } }
+  /* line 122, ../sass/style.scss */
+  #about form, #contact form, #login form {
+    width: 250px; }
+    /* line 124, ../sass/style.scss */
+    #about form input, #contact form input, #login form input {
+      margin: 10px 0; }
+    @media (max-width: 650px) {
+      /* line 122, ../sass/style.scss */
+      #about form, #contact form, #login form {
+        margin: 0 auto; } }
 
-/* line 124, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 #gallery {
   width: 70%;
   position: absolute;
   top: 40px;
   left: 350px; }
   @media (max-width: 650px) {
-    /* line 124, ../sass/style.scss */
+    /* line 133, ../sass/style.scss */
     #gallery {
       width: 80%;
       right: 0;
       margin: 100px 10% 0;
       top: 0;
       left: 0; } }
-  /* line 135, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   #gallery .item {
     width: 160px;
     margin: 1%;
     float: left; }
     @media (max-width: 650px) {
-      /* line 135, ../sass/style.scss */
+      /* line 144, ../sass/style.scss */
       #gallery .item {
         width: 96%;
         margin: 10px 2%; } }
-    /* line 142, ../sass/style.scss */
+    /* line 151, ../sass/style.scss */
     #gallery .item img {
       width: 100%; }
 
-/* line 151, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .modal-content {
   width: 100%;
   height: 100%;
@@ -259,7 +269,7 @@ nav ul {
   top: 0;
   left: 0; }
 
-/* line 158, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -271,7 +281,7 @@ nav ul {
   top: 0;
   left: 0; }
 
-/* line 170, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .reveal-modal {
   visibility: hidden;
   top: 100px;
@@ -280,18 +290,18 @@ nav ul {
   margin: 0 25%;
   position: absolute;
   z-index: 101; }
-  /* line 178, ../sass/style.scss */
+  /* line 188, ../sass/style.scss */
   .reveal-modal img {
     width: 100%;
     margin-top: 10px; }
   @media (max-width: 650px) {
-    /* line 170, ../sass/style.scss */
+    /* line 180, ../sass/style.scss */
     .reveal-modal {
       top: 30px;
       width: 80%;
       margin: 0 10%; } }
 
-/* line 189, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
   font-size: 22px;
   line-height: .5;
@@ -303,7 +313,7 @@ nav ul {
   font-weight: bold;
   cursor: pointer; }
 
-/* line 203, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 footer {
   width: 20%;
   height: 50px;
@@ -311,10 +321,10 @@ footer {
   position: absolute;
   bottom: 0; }
   @media (max-width: 650px) {
-    /* line 203, ../sass/style.scss */
+    /* line 213, ../sass/style.scss */
     footer {
       width: 100%; } }
-  /* line 212, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   footer #copy {
     color: #484848;
     text-transform: uppercase;
@@ -324,10 +334,10 @@ footer {
     padding: 20px 0; }
 
 @media (max-width: 650px) {
-  /* line 222, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   #about-content footer {
     position: relative; } }
 
-/* line 229, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 #work-content footer {
   display: none; }
