@@ -52,6 +52,7 @@ header{
         text-align: center;
         padding: 50px 0;
         @include breakpoint(klein) {
+                                    font-size: 2em;
                                     padding: 20px 0 0;}
     }
 }
@@ -105,7 +106,7 @@ header{
                                 width: 80%;
                                 position: relative;
                                 right: 0;
-                                margin: 150px 10% 0;}
+                                margin: 100px 10% 0;}
     h2{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         @include adjust-font-size-to(30px);
@@ -128,7 +129,7 @@ header{
     @include breakpoint(klein) {
                                 width: 80%;
                                 right: 0;
-                                margin: 150px 10% 0;
+                                margin: 100px 10% 0;
                                 top: 0;
                                 left: 0;}
     .item {
@@ -137,7 +138,7 @@ header{
     float: left;
     @include breakpoint(klein) {
                                 width: 96%;
-                                margin: 2%;}
+                                margin: 10px 2%;}
     img{
         width: 100%;
     }
@@ -179,9 +180,10 @@ header{
             margin-top: 10px;
         }
         @include breakpoint(klein) {
-                                top: 50;
+                                top: 30px;
                                 width: 80%;
-                                margin: 0 10%;}
+                                margin: 0 10%;
+                                }
         }
     
     .reveal-modal .close-reveal-modal {
@@ -225,7 +227,7 @@ footer{
 }
 #work-content{
     footer{
-        visibility: hidden;
+        display: none;
     }
 }
 
