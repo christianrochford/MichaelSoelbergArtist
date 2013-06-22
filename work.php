@@ -297,9 +297,9 @@
     <script src="js/masonry2.1.08.js"></script>
 
     <script>
-
-        $(function(){
-          $('#container').masonry({
+        
+        $(window).load(function(){
+            $('#container').masonry({
             // options
             itemSelector : '.item',
             columnWidth : 200
