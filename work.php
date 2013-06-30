@@ -1,5 +1,4 @@
-<?php?>
-
+<?php include 'php/inc/db.inc.php';?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -1,9 +1,9 @@
-
+<?php?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Michael Soelberg | Artist</title>
+    <title>Michael Soelberg | Script Error</title>
     
     <meta name="description" content="The work of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,15 +12,11 @@
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
 <body>
-    
-    <?php include 'php/inc/header.inc.php'; ?>
-    
     <section>
-        <img src="img/Received.png" id="fullscreen">
+        <p>
+        <?php echo $error; ?>
+        </p>
     </section>
-    
-    <?php include 'php/inc/footer.inc.php'; ?>
-    
 </body>
 </html>
 <?php?>

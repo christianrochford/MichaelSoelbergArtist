@@ -96,7 +96,7 @@ header{
     z-index: -1;
 }
 
-#about, #contact, #login{
+#about, #contact, #login, .admin{
     width: 50%;
     position: absolute;
     top: 0;
@@ -207,6 +207,85 @@ header{
         font-weight: bold;
         cursor: pointer;
         }
+
+//////////admin//////////
+
+.admin ul, .admin p, .admin form, #about p, #contact p{
+    margin: rhythm(1, 30px) 10px 0;
+    line-height: 3em;
+}
+
+#home p, #work p a, #contact p a, #about p a{
+    text-transform: uppercase;
+}
+
+#work ul form{
+    width: 800px;
+    overflow: hidden;
+    p{
+        float: left;
+    }
+    input{
+        margin: 18px 5px 0;
+    }
+}
+
+#addform, #editform{ 
+    form{
+        margin: rhythm(1, 30px) 10px 0;
+        line-height: 3em;
+        position: relative;
+        input{
+            position: absolute;
+            left: 100px;
+            #filename{
+                top: 0;
+            }
+            #description{
+                top: 3em;
+            }
+            #addPainting{
+                top: 6em;
+            }
+        }
+    }
+    p{
+        margin-top: 50px;
+        a{
+            text-transform: uppercase; 
+        }
+    }    
+}
+
+.css3button {
+    color: $heading-color;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    background: -moz-linear-gradient(
+        top,
+        #a7a7a7 0%,
+        #a7a7a7);
+    background: -webkit-gradient(
+        linear, left top, left bottom, 
+        from(#a7a7a7),
+        to(#a7a7a7));
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow:
+        0px 0px 0px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    -webkit-box-shadow:
+        0px 0px 0px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+    box-shadow:
+        0px 0px 0px rgba(000,000,000,0.5),
+        inset 0px 0px 0px rgba(255,255,255,1);
+        &:hover{
+            cursor: pointer;
+        }
+}
+
 
 //////////footer//////////
 
