@@ -2,8 +2,7 @@
 include '../../php/inc/magicquotes.inc.php'; 
 
 // Add a new painting
-if (isset($_GET['add']))
-{
+if (isset($_GET['add'])) {
   $pageTitle = 'New Painting';
   $action = 'addform';
   $filename = '';
@@ -11,10 +10,14 @@ if (isset($_GET['add']))
   $id = '';
   $button = 'Add Painting';
   include 'form1.html.php';
-exit(); }
+exit();
+}
 
-if (isset($_GET['addform']))
-{
+if (isset($_GET['addform']) && ($_POST['filename'] == "")) {
+  $error = 'Please compelte the form and upload a photo.';
+  include '../../php/error.html.php';
+  exit();
+} elseif (isset($_GET['addform']) && ($_POST['filename'] != "")) {
   include '../../php/inc/db.inc.php';
 try {
     $sql = 'INSERT INTO work SET
@@ -25,66 +28,58 @@ try {
     $s->bindValue(':description', $_POST['description']);
     $s->execute();
   }
-  catch (PDOException $e)
-  {
+  catch (PDOException $e) {
     $error = 'Error adding submitted painting.';
     include '../../php/error.html.php';
     exit();
-}
-
-// Upload file to tmp folder
-if ($_FILES["file"]["error"] > 0)
-  {
-  echo "Error: " . $_FILES["file"]["error"] . "<br>";
-  } else {
-  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-  echo "Type: " . $_FILES["file"]["type"] . "<br>";
-  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-  echo "Stored in: " . $_FILES["file"]["tmp_name"];
   }
 
-// Set allowed file types
-$allowedExts = array("gif", "jpeg", "jpg", "png");
+// Upload jpeg to root/img directory
+
+$allowedExts = array("jpeg", "jpg", "png");
 $temp = explode(".", $_FILES["file"]["name"]);
 $extension = end($temp);
-if ((($_FILES["file"]["type"] == "image/gif")
-|| ($_FILES["file"]["type"] == "image/jpeg")
-|| ($_FILES["file"]["type"] == "image/jpg")
-|| ($_FILES["file"]["type"] == "image/pjpeg")
-|| ($_FILES["file"]["type"] == "image/x-png")
-|| ($_FILES["file"]["type"] == "image/png"))
-&& ($_FILES["file"]["size"] < 20000) // File must be smaller than 20Kb
-&& in_array($extension, $allowedExts))
-  {
-  if ($_FILES["file"]["error"] > 0)
-    {
-    echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
-    } else {
-    // Save file to root/img/ directory
-    echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-    echo "Type: " . $_FILES["file"]["type"] . "<br>";
-    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-    echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
 
-    if (file_exists("../../img/" . $_FILES["file"]["name"]))
-      {
-      echo $_FILES["file"]["name"] . " already exists. ";
-      } else {
-      move_uploaded_file($_FILES["file"]["tmp_name"],
-      "../../img/" . $_FILES["file"]["name"]);
-      echo "Stored in: " . "../../img/" . $_FILES["file"]["name"];
-      }
+if ( isset( $_FILES["file"] ) and $_FILES["file"]["error"] == UPLOAD_ERR_OK ) {
+  if ((($_FILES["file"]["type"] !== "image/jpeg")
+  || ($_FILES["file"]["type"] !== "image/jpg")
+  || ($_FILES["file"]["type"] !== "image/pjpeg")
+  || ($_FILES["file"]["type"] !== "image/x-png")
+  || ($_FILES["file"]["type"] !== "image/png"))
+  && ($_FILES["file"]["size"] < 40000)
+  && in_array($extension, $allowedExts))
+   {
+    echo "<p>JPEG or PNG photos only, thanks!</p>";
+    } elseif ( !move_uploaded_file( $_FILES["file"]["tmp_name"], "../../img/" . basename( $_POST["filename"]) . "." . $extension ) ) {
+    echo "<p>Sorry, there was a problem uploading the photo. please try again.</p>" . $_FILES["file"]["error"] ;
+    } else {
+    header('Location: .');
+    exit();
     }
   } else {
-  echo "Invalid file";
+  switch( $_FILES["file"]["error"] ) {
+    case UPLOAD_ERR_INI_SIZE:
+      $error = 'The file size is too big.';
+      break;
+    case UPLOAD_ERR_FORM_SIZE:
+      $error = 'The photo is larger than the script allows.';
+      break;
+    case UPLOAD_ERR_NO_FILE:
+      $error = "No file was uploaded. Make sure you choose a file to upload.";
+      break;
+    default:
+      $message = "Please contact your server administrator for help.";
   }
-
+  $error =  "<p>Sorry, there was a problem uploading the image. $error</p>";
+  include '../../php/error.html.php';
+  exit();
+  }
 header('Location: .');
-exit(); } 
+exit(); }
+
 
 // Edit existing painting
-if (isset($_POST['action']) and $_POST['action'] == 'Edit')
-{
+if (isset($_POST['action']) and $_POST['action'] == 'Edit') {
   include '../../php/inc/db.inc.php';
 try {
     $sql = 'SELECT id, filename, description FROM work WHERE id = :id';
@@ -92,12 +87,11 @@ try {
     $s->bindValue(':id', $_POST['id']);
     $s->execute();
   }
-  catch (PDOException $e)
-  {
+  catch (PDOException $e) {
     $error = 'Error fetching painting details.';
     include '../../php/error.html.php';
     exit();
-}
+  }
 $row = $s->fetch();
   $pageTitle = 'Edit Paintings';
   $action = 'editform';
@@ -108,8 +102,7 @@ $row = $s->fetch();
   include 'form2.html.php';
 exit(); }
 
-if (isset($_GET['editform']))
-{
+if (isset($_GET['editform'])) {
   include '../../php/inc/db.inc.php';
 try {
     $sql = 'UPDATE work SET
@@ -138,7 +131,7 @@ if (isset($_POST['action']) and $_POST['action'] == 'Delete')
   // Get paintings
   try
   {
-    $sql = 'SELECT id FROM work WHERE id = :id';
+    $sql = 'SELECT id, filename FROM work WHERE id = :id';
     $s = $pdo->prepare($sql);
     $s->bindValue(':id', $_POST['id']);
     $s->execute();
@@ -168,8 +161,9 @@ catch (PDOException $e)
   include '../../php/error.html.php';
   exit();
 }
-
-  header('Location: .');
+// Set code for deleting image from server!!!
+unlink($_POST['filename'] . ".JPG");
+header('Location: .');
 exit(); }
 
 // Display all paintings in database
