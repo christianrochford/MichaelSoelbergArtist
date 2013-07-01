@@ -143,6 +143,7 @@ catch (PDOException $e)
   exit();
 }
 $result = $s->fetchAll();
+echo $_POST['filename'];
 // Delete painting entries
 try
 {
@@ -161,8 +162,7 @@ catch (PDOException $e)
   include '../../php/error.html.php';
   exit();
 }
-// Set code for deleting image from server!!!
-unlink($_POST['filename'] . ".JPG");
+unlink("../../img/" + $_POST['filename']);
 header('Location: .');
 exit(); }
 
