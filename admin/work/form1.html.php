@@ -16,10 +16,12 @@
         <h2><?php htmlout($pageTitle); ?></h2>
         <form action="?<?php htmlout($action); ?>" method="post" enctype="multipart/form-data">
             <div>
-                <label for="filename">Name: <input type="text" name="filename" id="filename" value="<?php htmlout($filename); ?>"></label>
+                <label for="filename">Name:</label>
+                <input type="text" name="filename" id="filename" value="<?php htmlout($filename); ?>">
             </div>
             <div>
-                <label for="description">Description: <input type="text" name="description" id="description" value="<?php htmlout($description); ?>"></label>
+                <label for="description">Description:</label>
+                <input type="text" name="description" id="description" value="<?php htmlout($description); ?>">
             </div>
             <div>
                 <input type="hidden" name="id" value="<?php htmlout($id); ?>">

@@ -1,5 +1,4 @@
 <?php include '../../php/inc/helpers.inc.php'; ?>
-<?php include '../../php/inc/db.inc.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,12 +17,18 @@
     
     <section class="admin" id="about">
       <h2>Manage Profile</h2>
-      <p><a href="?add">Edit Profile</a></p>
-      
+      <form action="" method="post">
+        <div>
+          <?php foreach ($about as $profile): ?>
+          <h2><?php htmlout($profile['heading']); ?></h2>
+          <p><?php htmlout($profile['information']); ?></p>
+          <input type="hidden" name="id" value="<?php echo $profile['id']; ?>">
+          <?php endforeach; ?>
+          <input type="submit" name="action" class="css3button" value="Edit">
+        </div>
+      </form>
       <p><a href="../index.php">Return to admin home.</a></p>
     </section>
-    
-    <?php include '../../php/inc/footer.inc.php'; ?>
     
   </body>
 </html>

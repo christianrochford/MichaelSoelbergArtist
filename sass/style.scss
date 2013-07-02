@@ -215,6 +215,13 @@ header{
     line-height: 3em;
 }
 
+#about.admin form{
+    width: 90%;
+    p{
+        width: 100%;
+    }
+} 
+
 #home p, #work p a, #contact p a, #about p a, #error p a{
     text-transform: uppercase;
 }
@@ -248,6 +255,7 @@ header{
                 top: 6em;
             }
         }
+
     }
     p{
         margin-top: 50px;
@@ -256,6 +264,23 @@ header{
         }
     }    
 }
+.about#editform{
+    #information{
+        top: 55px;
+        width: 300px;
+        height: 220px;
+        max-height: 220px;
+        overflow: scroll;
+    }
+    #heading{
+        top: 10px;
+    }
+    #addPainting{
+        top: 350px;
+        left: 0;
+    }
+}
+
 
 .css3button {
     color: $heading-color;
@@ -285,6 +310,11 @@ header{
             cursor: pointer;
         }
 }
+
+.admin p a{
+    padding-bottom: 50px;
+}
+
 
 
 //////////footer//////////

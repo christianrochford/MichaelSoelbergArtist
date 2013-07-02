@@ -12,16 +12,16 @@
 
     <?php include '../../php/inc/adminheader.inc.php'; ?>
     
-    <section class="admin" id="<?php htmlout($action); ?>">
+    <section class="admin about" id="<?php htmlout($action); ?>">
         <h2><?php htmlout($pageTitle); ?></h2>
         <form action="?<?php htmlout($action); ?>" method="post">
             <div>
-                <label for="filename">Name:</label>
-                <input type="text" name="filename" id="filename" value="<?php htmlout($filename); ?>">
+                <label for="heading">Heading:</label>
+                <input type="text" name="heading" id="heading" value="<?php htmlout($heading); ?>">
             </div>
             <div>
-                <label for="description">Description:</label>
-                <input type="text" name="description" id="description" value="<?php htmlout($description); ?>">
+                <label for="information">Information:</label>
+                <textarea type="text" name="information" id="information"><?php htmlout($information); ?></textarea>
             </div>
             <div>
                 <input type="hidden" name="id" value="<?php htmlout($id); ?>">
@@ -30,8 +30,6 @@
         </form>
         <p><a href="../index.php">Return to admin home.</a></p>
     </section>
-    
-    <?php include '../../php/inc/footer.inc.php'; ?>
     
 </body>
 </html>
