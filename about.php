@@ -1,4 +1,24 @@
-<?php?>
+<?php 
+
+include 'php/inc/db.inc.php'; 
+
+try {
+  $result = $pdo->query('SELECT id, heading, information FROM about');
+}
+catch (PDOException $e)
+{
+  $error = 'Error fetching profile from the database!';
+  include '../../php/error.html.php';
+  exit();
+}
+foreach ($result as $row)
+{
+  $about[] = array('id' => $row['id'], 'heading' => $row['heading'], 'information' => $row['information']);
+}
+
+include 'php/inc/helpers.inc.php';
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,15 +36,10 @@
     <?php include 'php/inc/header.inc.php'; ?>
     
     <section id="about">
-        <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. 
-        Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. 
-        Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus 
-        quis dui viverra vestibulum. Suspendisse vulputate aliquam dui. Nulla elementum dui ut augue. 
-        Aliquam vehicula mi at mauris. Maecenas placerat, nisl at consequat rhoncus, sem nunc gravida 
-        justo, quis eleifend arcu velit quis lacus. Morbi magna magna, tincidunt a, mattis non, imperdiet 
-        vitae, tellus. Sed odio est, auctor ac, sollicitudin in, consequat vitae, orci. Fusce id felis. 
-        Vivamus sollicitudin metus eget eros.</p>  
+        <?php foreach ($about as $profile): ?>
+        <h2><?php htmlout($profile['heading']); ?></h2>
+        <p><?php htmlout($profile['information']); ?></p>  
+        <?php endforeach; ?>
     </section>
     
     <?php include 'php/inc/footer.inc.php'; ?>

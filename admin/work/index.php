@@ -36,20 +36,18 @@ try {
 
 // Upload jpeg to root/img directory
 
-$allowedExts = array("jpeg", "jpg", "png");
+$allowedExts = array("jpeg", "jpg");
 $temp = explode(".", $_FILES["file"]["name"]);
 $extension = end($temp);
 
 if ( isset( $_FILES["file"] ) and $_FILES["file"]["error"] == UPLOAD_ERR_OK ) {
   if ((($_FILES["file"]["type"] !== "image/jpeg")
   || ($_FILES["file"]["type"] !== "image/jpg")
-  || ($_FILES["file"]["type"] !== "image/pjpeg")
-  || ($_FILES["file"]["type"] !== "image/x-png")
-  || ($_FILES["file"]["type"] !== "image/png"))
+  || ($_FILES["file"]["type"] !== "image/pjpeg"))
   && ($_FILES["file"]["size"] < 40000)
   && in_array($extension, $allowedExts))
    {
-    echo "<p>JPEG or PNG photos only, thanks!</p>";
+    echo "<p>JPEG photos only, thanks!</p>";
     } elseif ( !move_uploaded_file( $_FILES["file"]["tmp_name"], "../../img/" . basename( $_POST["filename"]) . "." . $extension ) ) {
     echo "<p>Sorry, there was a problem uploading the photo. please try again.</p>" . $_FILES["file"]["error"] ;
     } else {

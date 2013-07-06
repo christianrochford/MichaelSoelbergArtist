@@ -23,7 +23,7 @@
          <li>
             <form action="" method="post">
               <div>
-                <?php htmlout($painting['name']); ?>
+                <p><?php htmlout($painting['name']); ?></p>
                 <input type="hidden" name="id" value="<?php
                     echo $painting['id']; ?>">
                 <input type="submit" name="action" class="css3button" value="Edit">

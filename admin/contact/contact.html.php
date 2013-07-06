@@ -18,12 +18,18 @@
     
     <section class="admin" id="contact">
       <h2>Manage Contact Details</h2>
-      <p><a href="?add">Add new contact details:</a></p>
+      <?php foreach ($details as $detail): ?>
+      <form action="" method="post">
+        <div>
+          <p><?php htmlout($detail['email']); ?></p>
+          <input type="hidden" name="id" value="<?php echo $detail['id']; ?>">
+          <?php endforeach; ?>
+          <input type="submit" name="action" class="css3button" value="Edit">
+        </div>
+      </form>
       
       <p><a href="../index.php">Return to admin home.</a></p>
     </section>
-    
-    <?php include '../../php/inc/footer.inc.php'; ?>
     
   </body>
 </html>

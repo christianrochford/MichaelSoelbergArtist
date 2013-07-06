@@ -25,8 +25,6 @@
         </ul>
     </section>
     
-    <?php include '../php/inc/footer.inc.php'; ?>
-    
 </body>
 </html>
 <?php?>

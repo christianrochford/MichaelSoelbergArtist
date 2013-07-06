@@ -1,3 +1,24 @@
+<?php 
+
+include 'php/inc/db.inc.php'; 
+
+try {
+  $result = $pdo->query('SELECT id, filename FROM home ORDER BY id DESC LIMIT 1');
+}
+catch (PDOException $e)
+{
+  $error = 'Error fetching image from the database!';
+  include '../../php/error.html.php';
+  exit();
+}
+foreach ($result as $row)
+{
+  $paintings[] = array('filename' => $row['filename'] );
+}
+
+include 'php/inc/helpers.inc.php';
+
+?>
 
 <!doctype html>
 <html lang="en">
@@ -16,9 +37,11 @@
     <?php include 'php/inc/header.inc.php'; ?>
     
     <section>
-        <img src="img/Received.png" id="fullscreen">
+        <?php foreach ($paintings as $painting): ?>
+        <img src="img/<?php htmlout($painting['filename']); ?>.jpg" id="fullscreen">
+        <?php endforeach; ?>
     </section>
-    
+
     <?php include 'php/inc/footer.inc.php'; ?>
     
 </body>
