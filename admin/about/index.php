@@ -1,5 +1,10 @@
 <?php 
-
+include '../../php/inc/magicquotes.inc.php'; 
+require_once '../access.html.php';
+if (!userIsLoggedIn()) {
+    include '../login.php';
+    exit(); 
+}
 // Edit existing profile
 if (isset($_POST['action']) and $_POST['action'] == 'Edit') {
   include '../../php/inc/db.inc.php';

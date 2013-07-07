@@ -1,14 +1,13 @@
-<?php include '../../php/inc/helpers.inc.php'; ?>
+<?php 
+include_once '../../php/inc/helpers.inc.php'; 
+?>
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Michael Soelberg | About Admin</title>
-    
-    <meta name="description" content="The profile of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../../css/style.css">
-    
+    <link rel="stylesheet" href="../../css/style.css">  
     <script src="../../js/modernizr.custom.71203.js"></script>
 </head>
 <body>
@@ -28,6 +27,7 @@
         </div>
       </form>
       <p><a href="../index.php">Return to admin home.</a></p>
+      <?php include '../logout.inc.html.php'; ?>
     </section>
     
   </body>

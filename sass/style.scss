@@ -222,11 +222,11 @@ header{
     }
 } 
 
-#home p, #work p a, #contact p a, #about p a, #error p a{
+#home p, #work p a, #contact p a, #about p a, #error p a, #login p a{
     text-transform: uppercase;
 }
 
-#work ul form{
+#work ul form, #login form{
     width: 800px;
     overflow: hidden;
     p{
@@ -234,6 +234,16 @@ header{
     }
     input{
         margin: 18px 5px 0;
+    }
+}
+#login form{
+    width: 300px;
+    position: relative;
+    input#username, input#password{
+        width: 150px;
+    }
+    input#password{
+        margin-left: 9px;
     }
 }
 

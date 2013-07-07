@@ -1,4 +1,6 @@
-<?php include_once '../../php/inc/helpers.inc.php'; ?>
+<?php 
+include_once '../../php/inc/helpers.inc.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +8,6 @@
     <title><?php htmlout($pageTitle); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../../css/style.css">
-
 </head>
 <body>
 
@@ -29,6 +30,7 @@
             </div>
         </form>
         <p><a href="../index.php">Return to admin home.</a></p>
+        <?php include '../logout.inc.html.php'; ?>
     </section>
     
 </body>

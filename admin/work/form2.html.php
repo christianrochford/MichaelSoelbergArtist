@@ -1,4 +1,6 @@
-<?php include_once '../../php/inc/helpers.inc.php'; ?>
+<?php 
+include_once '../../php/inc/helpers.inc.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +31,7 @@
             </div>
         </form>
         <p><a href="../index.php">Return to admin home.</a></p>
+        <?php include '../logout.inc.html.php'; ?>
     </section>
     
     <?php include '../../php/inc/footer.inc.php'; ?>

@@ -326,61 +326,72 @@ nav ul {
     width: 100%; }
 
 /* line 225, ../sass/style.scss */
-#home p, #work p a, #contact p a, #about p a, #error p a {
+#home p, #work p a, #contact p a, #about p a, #error p a, #login p a {
   text-transform: uppercase; }
 
 /* line 229, ../sass/style.scss */
-#work ul form {
+#work ul form, #login form {
   width: 800px;
   overflow: hidden; }
   /* line 232, ../sass/style.scss */
-  #work ul form p {
+  #work ul form p, #login form p {
     float: left; }
   /* line 235, ../sass/style.scss */
-  #work ul form input {
+  #work ul form input, #login form input {
     margin: 18px 5px 0; }
 
-/* line 241, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
+#login form {
+  width: 300px;
+  position: relative; }
+  /* line 242, ../sass/style.scss */
+  #login form input#username, #login form input#password {
+    width: 150px; }
+  /* line 245, ../sass/style.scss */
+  #login form input#password {
+    margin-left: 9px; }
+
+/* line 251, ../sass/style.scss */
 #addform form, #editform form {
   margin: 0.8em 10px 0;
   line-height: 3em;
   position: relative; }
-  /* line 245, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   #addform form input, #editform form input {
     position: absolute;
     left: 100px; }
-    /* line 248, ../sass/style.scss */
+    /* line 258, ../sass/style.scss */
     #addform form input #filename, #editform form input #filename {
       top: 0; }
-    /* line 251, ../sass/style.scss */
+    /* line 261, ../sass/style.scss */
     #addform form input #description, #editform form input #description {
       top: 3em; }
-    /* line 254, ../sass/style.scss */
+    /* line 264, ../sass/style.scss */
     #addform form input #addPainting, #editform form input #addPainting {
       top: 6em; }
-/* line 260, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #addform p, #editform p {
   margin-top: 50px; }
-  /* line 262, ../sass/style.scss */
+  /* line 272, ../sass/style.scss */
   #addform p a, #editform p a {
     text-transform: uppercase; }
 
-/* line 268, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .about#editform #information {
   top: 55px;
   width: 300px;
   height: 220px;
   max-height: 220px;
   overflow: scroll; }
-/* line 275, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .about#editform #heading {
   top: 10px; }
-/* line 278, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 .about#editform #addPainting {
   top: 350px;
   left: 0; }
 
-/* line 285, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .css3button {
   color: #484848;
   text-transform: uppercase;
@@ -393,15 +404,15 @@ nav ul {
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white; }
-  /* line 309, ../sass/style.scss */
+  /* line 319, ../sass/style.scss */
   .css3button:hover {
     cursor: pointer; }
 
-/* line 314, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .admin p a {
   padding-bottom: 50px; }
 
-/* line 322, ../sass/style.scss */
+/* line 332, ../sass/style.scss */
 footer {
   width: 20%;
   height: 50px;
@@ -409,10 +420,10 @@ footer {
   position: absolute;
   bottom: 0; }
   @media (max-width: 650px) {
-    /* line 322, ../sass/style.scss */
+    /* line 332, ../sass/style.scss */
     footer {
       width: 100%; } }
-  /* line 331, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   footer #copy {
     color: #484848;
     text-transform: uppercase;
@@ -422,10 +433,10 @@ footer {
     padding: 20px 0; }
 
 @media (max-width: 650px) {
-  /* line 341, ../sass/style.scss */
+  /* line 351, ../sass/style.scss */
   #about-content footer {
     position: relative; } }
 
-/* line 348, ../sass/style.scss */
+/* line 358, ../sass/style.scss */
 #work-content footer {
   display: none; }

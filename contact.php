@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-include 'php/inc/db.inc.php'; 
+include 'php/inc/db.inc.php';
 
 try {
   $result = $pdo->query('SELECT email FROM contact');
@@ -24,17 +24,13 @@ include 'php/inc/helpers.inc.php';
 <head>
     <meta charset="UTF-8">
     <title>Michael Soelberg | Contact</title>
-    
     <meta name="description" content="The work of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
 <body>
-    
     <?php include 'php/inc/header.inc.php'; ?>
-    
     <section id="contact">
         <?php foreach ($details as $detail): ?>
         <h2>Contact Me:</h2>
@@ -42,8 +38,6 @@ include 'php/inc/helpers.inc.php';
         <p>Send me an <a href="<?php htmlout($detail['email']); ?>">email</a>.</p>
         <?php endforeach; ?>
     </section>
-    
     <?php include 'php/inc/footer.inc.php'; ?>
-
 </body>
 </html>

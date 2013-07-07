@@ -1,12 +1,19 @@
-<?php
+<?php 
 
-include '../../php/inc/db.inc.php'; 
+include '../../php/inc/magicquotes.inc.php'; 
+require_once '../access.html.php';
+if (!userIsLoggedIn()) {
+    include '../login.php';
+    exit(); 
+}
+
+include '../../php/inc/db.inc.php';
 
 // Set Homepage background
 if (isset($_POST['set'])) {
   try {
       $sql = 'INSERT INTO home SET
-          filename = :filename';
+filename = :filename';
       $s = $pdo->prepare($sql);
       $s->bindValue(':filename', $_POST['background']);
       $s->execute();
@@ -20,7 +27,7 @@ if (isset($_POST['set'])) {
 
 // Display image options
 
-include '../../php/inc/db.inc.php'; 
+include '../../php/inc/db.inc.php';
 
 try {
   $result = $pdo->query('SELECT id, filename FROM work');

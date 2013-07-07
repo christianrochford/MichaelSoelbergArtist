@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-include 'php/inc/db.inc.php'; 
+include 'php/inc/db.inc.php';
 
 try {
   $result = $pdo->query('SELECT id, heading, information FROM about');
@@ -24,26 +24,19 @@ include 'php/inc/helpers.inc.php';
 <head>
     <meta charset="UTF-8">
     <title>Michael Soelberg | About</title>
-    
     <meta name="description" content="The work of artist Michael Soelberg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    
     <script src="js/modernizr.custom.71203.js"></script>
 </head>
 <body id="about-content">
-    
     <?php include 'php/inc/header.inc.php'; ?>
-    
     <section id="about">
         <?php foreach ($about as $profile): ?>
         <h2><?php htmlout($profile['heading']); ?></h2>
-        <p><?php htmlout($profile['information']); ?></p>  
+        <p><?php htmlout($profile['information']); ?></p>
         <?php endforeach; ?>
     </section>
-    
     <?php include 'php/inc/footer.inc.php'; ?>
-
-
 </body>
 </html>

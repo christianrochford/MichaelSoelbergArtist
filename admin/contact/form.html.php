@@ -6,12 +6,9 @@
     <title><?php htmlout($pageTitle); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../../css/style.css">
-
 </head>
 <body>
-
     <?php include '../../php/inc/adminheader.inc.php'; ?>
-    
     <section class="admin contact" id="<?php htmlout($action); ?>">
         <h2><?php htmlout($pageTitle); ?></h2>
         <form action="?<?php htmlout($action); ?>" method="post">
@@ -25,7 +22,7 @@
             </div>
         </form>
         <p><a href="../index.php">Return to admin home.</a></p>
+        <?php include '../logout.inc.html.php'; ?>
     </section>
-    
 </body>
 </html>

@@ -1,5 +1,10 @@
-<?php 
-
+<?php
+include '../../php/inc/magicquotes.inc.php'; 
+require_once '../access.html.php';
+if (!userIsLoggedIn()) {
+    include '../login.php';
+    exit(); 
+}
 // Edit existing details
 if (isset($_POST['action']) and $_POST['action'] == 'Edit') {
   include '../../php/inc/db.inc.php';
@@ -27,8 +32,8 @@ if (isset($_GET['editform'])) {
   include '../../php/inc/db.inc.php';
 try {
     $sql = 'UPDATE contact SET
-        email = :email
-        WHERE id = :id';
+email = :email
+WHERE id = :id';
     $s = $pdo->prepare($sql);
     $s->bindValue(':id', $_POST['id']);
     $s->bindValue(':email', $_POST['email']);
@@ -45,7 +50,7 @@ exit(); }
 
 // Show all details
 
-include '../../php/inc/db.inc.php'; 
+include '../../php/inc/db.inc.php';
 try {
   $result = $pdo->query('SELECT id, email FROM contact');
 }
