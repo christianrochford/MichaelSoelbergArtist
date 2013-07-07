@@ -16,7 +16,7 @@
     <?php include '../php/inc/adminTopHeader.inc.php'; ?>
     
     <section class="admin" id="admin">
-        <form method="post" action="login.php">
+        <form method="post" action="_signin.php">
           <label for="username">Username</label>
           <input type="text" name="username">
           <label for="password">Password</label>

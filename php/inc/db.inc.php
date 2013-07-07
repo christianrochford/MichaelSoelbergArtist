@@ -1,4 +1,6 @@
-<?php try
+<?php 
+session_start();
+try
 {
 $pdo = new PDO('mysql:host=localhost;dbname=Soelberg', 'root', 'root');
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

@@ -14,6 +14,8 @@
     
     <section class="admin" id="<?php htmlout($action); ?>">
         <h2><?php htmlout($pageTitle); ?></h2>
+        <p>Files must be JPEG format.<br>
+                Optimal width: 600px.</p>
         <form action="?<?php htmlout($action); ?>" method="post" enctype="multipart/form-data">
             <div>
                 <label for="filename">Name:</label>
