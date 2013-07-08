@@ -69,6 +69,7 @@ include 'php/inc/helpers.inc.php';
             });
         });
 
+
     </script>
 
 </body>

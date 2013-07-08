@@ -34,7 +34,7 @@ include 'php/inc/helpers.inc.php';
     <?php include 'php/inc/header.inc.php'; ?>
     <section>
         <?php foreach ($paintings as $painting): ?>
-        <img src="img/<?php htmlout($painting['filename']); ?>.jpg" id="fullscreen">
+        <img src="img/<?php htmlout($painting['filename']); ?>.jpg" class="centered">
         <?php endforeach; ?>
     </section>
     <?php include 'php/inc/footer.inc.php'; ?>

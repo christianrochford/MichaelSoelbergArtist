@@ -18,11 +18,8 @@
   @else if $point == gross {
     @media (max-width: 1250px) { @content; }
   }
-  @else if $point == mittelgross {
-    @media (max-width: 800px)  { @content; }
-  }
   @else if $point == klein {
-    @media (max-width: 650px)  { @content; }
+    @media (max-width: 850px)  { @content; }
   }
   @else if $point == ganzklein {
     @media (max-width: 480px)  { @content; }
@@ -35,48 +32,50 @@
 
 header{
     background-color: $header-color;
-    width: 20%;
-    min-width: 250px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.8;//add ie fix
-    @include breakpoint(klein) {width: 100%;
-                                height: 100px;
-                            }
+    width: 100%;
+    height: 100px;
     h1{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         font-size: 3em;
+        width: 500px;
+        float: left;
         text-transform: uppercase;
         text-align: center;
-        padding: 50px 0;
+        padding: 25px 0;
+        a, a:hover, a:visited{
+            color: $heading-color;
+            text-decoration: none;
+        }
         @include breakpoint(klein) {
-                                    font-size: 2em;
-                                    padding: 20px 0 0;}
+            width: 100%;
+            float: none;                        
+        }
     }
 }
 
 //////////nav//////////
     nav{
         ul{
-            margin: 0 auto;
+            width: 300px;
+            float: right;
+            margin: 45px 25px 0 0;
+            @include breakpoint(klein) {
+                width: 320px;
+                margin: 0 auto;  
+                float: none;                                  
+            }
             li{
-                @include breakpoint(klein) {float: left;
-                                            width: 25%;}
-                a{
+                float: left;
+                width: 100px;
+                display: block;
+                text-align: center;
+                @include breakpoint(klein) {}
+                a, a:visited {
                     font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
-                    color: $text-color;
-                    text-align: center;
+                    color: $heading-color;
                     text-transform: uppercase;
-                    display: block;
-                    width: 30%;
-                    margin: 50px 35%;
-                    @include breakpoint(klein) {
-                                                width: 100%;
-                                                margin: 10px auto;}
-                    &:hover, &:focus{
-                        color: $heading-color;
+                    &:hover, &:focus {
+                        color: $text-color;
                         text-decoration: none;
                     }
                 }
@@ -86,14 +85,19 @@ header{
 
 //////////content//////////
 
-#fullscreen{
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.centered{
+    width: 40%;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    @include breakpoint(klein) {
+                                top: 150px;
+                                width: 60%;}
 }
 
 #about, #contact, #login, .admin, #error{
@@ -106,7 +110,7 @@ header{
                                 width: 80%;
                                 position: relative;
                                 right: 0;
-                                margin: 100px 10% 0;}
+                                margin: 50px 10% 0;}
     h2{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         @include adjust-font-size-to(30px);
@@ -125,28 +129,32 @@ header{
             margin: 10px 0;
         }
         @include breakpoint(klein) {
-            margin: 0 auto;
-        }
+                                margin: 0 auto;}
     }
 }
 
 #gallery{
-    width: 70%;
+    width: 90%;
     position: absolute;
-    top: 40px;
-    left: 350px;
+    top: 100px;
+    left: 5%;
     @include breakpoint(klein) {
+                                top: 120px;}
+    @include breakpoint(ganzklein) {
                                 width: 80%;
                                 right: 0;
-                                margin: 100px 10% 0;
+                                margin: 120px 10% 0;
                                 top: 0;
                                 left: 0;}
     .item {
     width: 160px;
-    margin: 1%;
+    height: 160px;
+    overflow: hidden;
+    margin: 20px;
     float: left;
-    @include breakpoint(klein) {
+    @include breakpoint(ganzklein) {
                                 width: 96%;
+                                height: auto;
                                 margin: 10px 2%;}
     img{
         width: 100%;
@@ -170,7 +178,9 @@ header{
         height: 100%;
         width: 100%;
         background: $background-color;
-        opacity: 0.8;
+        zoom: 1;
+        filter: alpha(opacity=90);
+        opacity: 0.9;
         z-index: 100;
         display: none;
         top: 0;
@@ -179,7 +189,7 @@ header{
     
     .reveal-modal {
         visibility: hidden;
-        top: 100px; 
+        top: -50px; 
         left: 0;
         width: 50%;
         margin: 0 25%;
