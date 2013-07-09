@@ -195,7 +195,7 @@ nav ul {
   width: 50%;
   position: absolute;
   top: 0;
-  right: 15%;
+  right: 25%;
   margin-top: 170px; }
   @media (max-width: 850px) {
     /* line 103, ../sass/style.scss */

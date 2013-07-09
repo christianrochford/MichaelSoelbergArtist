@@ -7,7 +7,7 @@ function userIsLoggedIn() {
             $GLOBALS['loginError'] = 'Please fill in both fields';
             return FALSE;
         }
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
         // Check that the username and password are contained in the database, if so allow user access and start session
         if (databaseContainsUser($_POST['username'], $password)) {
             session_start();
