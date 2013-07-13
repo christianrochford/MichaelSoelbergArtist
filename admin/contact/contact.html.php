@@ -1,5 +1,5 @@
-<?php include '../../php/inc/helpers.inc.php'; ?>
-<?php include '../../php/inc/db.inc.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/helpers.inc.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php'; ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,8 +10,9 @@
   <script src="../../js/modernizr.custom.71203.js"></script>
 </head>
 <body>
-<?php include '../../php/inc/adminheader.inc.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/adminheader.inc.php'; ?>
   <section class="admin" id="contact">
+   <div class="content_text">
     <h2>Manage Contact Details</h2>
     <?php foreach ($details as $detail): ?>
     <form action="" method="post">
@@ -23,7 +24,8 @@
       </div>
     </form>
     <p><a href="../index.php">Return to admin home.</a></p>
-    <?php include '../logout.inc.html.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/admin/logout.inc.html.php'; ?>
+   </div>
   </section>
 </body>
 </html>

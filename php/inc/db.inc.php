@@ -8,6 +8,19 @@ $pdo = new PDO('mysql:host=localhost;dbname=Soelberg', 'root', 'root');
 catch (PDOException $e)
 {
   $error = 'Unable to connect to the database server.';
-  include '../error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] .'/php/error.html.php';
   exit();
 }
+
+/*
+
+godaddy.com
+username: MichaelTSoelberg
+pass: Christian1
+
+database
+name: Soelberg
+username: Soelberg
+pass: Michael#1
+
+*/

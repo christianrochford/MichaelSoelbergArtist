@@ -145,116 +145,119 @@ header {
       header h1 {
         width: 100%;
         float: none; } }
+    @media (max-width: 320px) {
+      /* line 37, ../sass/style.scss */
+      header h1 {
+        font-size: 2em; } }
 
-/* line 58, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 nav ul {
   width: 300px;
   float: right;
   margin: 45px 25px 0 0; }
   @media (max-width: 850px) {
-    /* line 58, ../sass/style.scss */
+    /* line 61, ../sass/style.scss */
     nav ul {
       width: 320px;
       margin: 0 auto;
       float: none; } }
-  /* line 67, ../sass/style.scss */
+  /* line 70, ../sass/style.scss */
   nav ul li {
     float: left;
     width: 100px;
     display: block;
     text-align: center; }
-    /* line 73, ../sass/style.scss */
+    /* line 76, ../sass/style.scss */
     nav ul li a, nav ul li a:visited {
       font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
       color: #484848;
       text-transform: uppercase; }
-      /* line 77, ../sass/style.scss */
+      /* line 80, ../sass/style.scss */
       nav ul li a:hover, nav ul li a:focus, nav ul li a:visited:hover, nav ul li a:visited:focus {
         color: #a7a7a7;
         text-decoration: none; }
 
-/* line 88, ../sass/style.scss */
-.centered {
-  width: 40%;
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0); }
-  @media (max-width: 850px) {
-    /* line 88, ../sass/style.scss */
-    .centered {
-      top: 150px;
-      width: 60%; } }
+/* line 91, ../sass/style.scss */
+#home_image {
+  width: 100%;
+  float: left; }
 
-/* line 103, ../sass/style.scss */
-#about, #contact, #login, .admin, #error {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  right: 25%;
-  margin-top: 170px; }
+/* line 96, ../sass/style.scss */
+.centered {
+  width: 33.33333%;
+  margin: 20px 33.33333%; }
   @media (max-width: 850px) {
-    /* line 103, ../sass/style.scss */
-    #about, #contact, #login, .admin, #error {
-      width: 80%;
-      position: relative;
-      right: 0;
-      margin: 50px 10% 0; } }
-  /* line 114, ../sass/style.scss */
+    /* line 96, ../sass/style.scss */
+    .centered {
+      width: 50%;
+      margin: 20px 25%; } }
+
+/* line 105, ../sass/style.scss */
+#about, #contact, #login, .admin, #error {
+  width: 100%;
+  float: left;
+  margin-top: 50px;
+  min-height: 300px; }
+  /* line 110, ../sass/style.scss */
   #about h2, #contact h2, #login h2, .admin h2, #error h2 {
     font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
     font-size: 1.875em;
     line-height: 1.6em;
     color: #484848; }
     @media (max-width: 850px) {
-      /* line 114, ../sass/style.scss */
+      /* line 110, ../sass/style.scss */
       #about h2, #contact h2, #login h2, .admin h2, #error h2 {
         font-size: 2em;
         line-height: 1.5em; } }
-  /* line 120, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   #about p, #contact p, #login p, .admin p, #error p {
     margin: 0.8em auto 0;
     line-height: 2em; }
     @media (max-width: 850px) {
-      /* line 120, ../sass/style.scss */
+      /* line 116, ../sass/style.scss */
       #about p, #contact p, #login p, .admin p, #error p {
         font-size: 1.5em;
         line-height: 2em;
         line-height: 1.5em; } }
-  /* line 126, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   #about form, #contact form, #login form, .admin form, #error form {
     width: 250px; }
-    /* line 128, ../sass/style.scss */
+    /* line 124, ../sass/style.scss */
     #about form input, #contact form input, #login form input, .admin form input, #error form input {
       margin: 10px 0; }
     @media (max-width: 850px) {
-      /* line 126, ../sass/style.scss */
+      /* line 122, ../sass/style.scss */
       #about form, #contact form, #login form, .admin form, #error form {
         margin: 0 auto; } }
 
-/* line 136, ../sass/style.scss */
-#gallery {
-  width: 90%;
-  position: absolute;
-  top: 100px;
-  left: 5%; }
-  @media (max-width: 850px) {
-    /* line 136, ../sass/style.scss */
-    #gallery {
-      top: 120px; } }
+/* line 132, ../sass/style.scss */
+.content_text {
+  width: 50%;
+  background: green; }
   @media (max-width: 480px) {
-    /* line 136, ../sass/style.scss */
-    #gallery {
-      width: 80%;
-      right: 0;
-      margin: 120px 10% 0;
-      top: 0;
-      left: 0; } }
-  /* line 149, ../sass/style.scss */
+    /* line 132, ../sass/style.scss */
+    .content_text {
+      width: 90%;
+      margin: 0 5%; } }
+
+/* line 139, ../sass/style.scss */
+#work {
+  position: relative;
+  width: 100%;
+  float: left; }
+
+/* line 144, ../sass/style.scss */
+#gallery {
+  width: 100%; }
+  /* line 146, ../sass/style.scss */
+  #gallery #container {
+    margin-left: 5%; }
+    @media (max-width: 480px) {
+      /* line 146, ../sass/style.scss */
+      #gallery #container {
+        margin-left: 0;
+        margin-top: 20px; } }
+  /* line 151, ../sass/style.scss */
   #gallery .item {
     width: 160px;
     height: 160px;
@@ -262,16 +265,16 @@ nav ul {
     margin: 20px;
     float: left; }
     @media (max-width: 480px) {
-      /* line 149, ../sass/style.scss */
+      /* line 151, ../sass/style.scss */
       #gallery .item {
         width: 96%;
         height: auto;
         margin: 10px 2%; } }
-    /* line 159, ../sass/style.scss */
+    /* line 161, ../sass/style.scss */
     #gallery .item img {
       width: 100%; }
 
-/* line 169, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .modal-content {
   width: 100%;
   height: 100%;
@@ -279,7 +282,7 @@ nav ul {
   top: 0;
   left: 0; }
 
-/* line 176, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -293,7 +296,7 @@ nav ul {
   top: 0;
   left: 0; }
 
-/* line 190, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 .reveal-modal {
   visibility: hidden;
   top: -50px;
@@ -302,18 +305,22 @@ nav ul {
   margin: 0 25%;
   position: absolute;
   z-index: 101; }
-  /* line 198, ../sass/style.scss */
+  /* line 200, ../sass/style.scss */
   .reveal-modal img {
     width: 100%;
     margin-top: 10px; }
   @media (max-width: 850px) {
-    /* line 190, ../sass/style.scss */
+    /* line 192, ../sass/style.scss */
     .reveal-modal {
       top: 30px;
       width: 80%;
       margin: 0 10%; } }
+  @media (max-width: 480px) {
+    /* line 192, ../sass/style.scss */
+    .reveal-modal {
+      top: -50px; } }
 
-/* line 209, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
   font-size: 22px;
   line-height: .5;
@@ -324,86 +331,93 @@ nav ul {
   text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
   font-weight: bold;
   cursor: pointer; }
+  /* line 225, ../sass/style.scss */
+  .reveal-modal .close-reveal-modal:hover {
+    text-decoration: none; }
 
-/* line 223, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .admin ul, .admin p, .admin form, #about p, #contact p {
   margin: 0.8em 10px 0;
   line-height: 3em; }
+  @media (max-width: 480px) {
+    /* line 232, ../sass/style.scss */
+    .admin ul, .admin p, .admin form, #about p, #contact p {
+      line-height: 1.5em; } }
 
-/* line 228, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 #about.admin form {
   width: 90%; }
-  /* line 230, ../sass/style.scss */
+  /* line 242, ../sass/style.scss */
   #about.admin form p {
     width: 100%; }
 
-/* line 235, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 #home p, #work p a, #contact p a, #about p a, #error p a, #login p a {
   text-transform: uppercase; }
 
-/* line 239, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 #work ul form, #login form {
   width: 800px;
   overflow: hidden; }
-  /* line 242, ../sass/style.scss */
+  /* line 254, ../sass/style.scss */
   #work ul form p, #login form p {
     float: left; }
-  /* line 245, ../sass/style.scss */
+  /* line 257, ../sass/style.scss */
   #work ul form input, #login form input {
     margin: 18px 5px 0; }
 
-/* line 249, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 #login form {
-  width: 300px;
+  width: 250px;
   position: relative; }
-  /* line 252, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   #login form input#username, #login form input#password {
     width: 150px; }
-  /* line 255, ../sass/style.scss */
+  /* line 267, ../sass/style.scss */
   #login form input#password {
     margin-left: 9px; }
 
-/* line 261, ../sass/style.scss */
+/* line 273, ../sass/style.scss */
 #addform form, #editform form {
   margin: 0.8em 10px 0;
   line-height: 3em;
   position: relative; }
-  /* line 265, ../sass/style.scss */
+  /* line 277, ../sass/style.scss */
   #addform form input, #editform form input {
     position: absolute;
     left: 100px; }
-    /* line 268, ../sass/style.scss */
+    /* line 280, ../sass/style.scss */
     #addform form input #filename, #editform form input #filename {
       top: 0; }
-    /* line 271, ../sass/style.scss */
+    /* line 283, ../sass/style.scss */
     #addform form input #description, #editform form input #description {
       top: 3em; }
-    /* line 274, ../sass/style.scss */
+    /* line 286, ../sass/style.scss */
     #addform form input #addPainting, #editform form input #addPainting {
       top: 6em; }
-/* line 280, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 #addform p, #editform p {
   margin-top: 50px; }
-  /* line 282, ../sass/style.scss */
+  /* line 294, ../sass/style.scss */
   #addform p a, #editform p a {
     text-transform: uppercase; }
 
-/* line 288, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .about#editform #information {
   top: 55px;
   width: 300px;
   height: 220px;
   max-height: 220px;
   overflow: scroll; }
-/* line 295, ../sass/style.scss */
+/* line 307, ../sass/style.scss */
 .about#editform #heading {
   top: 10px; }
-/* line 298, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 .about#editform #addPainting {
-  top: 350px;
+  top: 315px;
   left: 0; }
 
-/* line 305, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .css3button {
   color: #484848;
   text-transform: uppercase;
@@ -416,26 +430,20 @@ nav ul {
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5), inset 0px 0px 0px white; }
-  /* line 329, ../sass/style.scss */
+  /* line 341, ../sass/style.scss */
   .css3button:hover {
     cursor: pointer; }
 
-/* line 334, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .admin p a {
   padding-bottom: 50px; }
 
-/* line 342, ../sass/style.scss */
+/* line 354, ../sass/style.scss */
 footer {
-  width: 20%;
+  width: 100%;
   height: 50px;
-  min-width: 250px;
-  position: absolute;
-  bottom: 0; }
-  @media (max-width: 850px) {
-    /* line 342, ../sass/style.scss */
-    footer {
-      width: 100%; } }
-  /* line 351, ../sass/style.scss */
+  float: left; }
+  /* line 358, ../sass/style.scss */
   footer #copy {
     color: #484848;
     text-transform: uppercase;
@@ -443,12 +451,3 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px 0; }
-
-@media (max-width: 850px) {
-  /* line 361, ../sass/style.scss */
-  #about-content footer {
-    position: relative; } }
-
-/* line 368, ../sass/style.scss */
-#work-content footer {
-  display: none; }

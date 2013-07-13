@@ -1,5 +1,5 @@
 <?php 
-include_once '../../php/inc/helpers.inc.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/helpers.inc.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,10 @@ include_once '../../php/inc/helpers.inc.php';
 </head>
 <body>
 
-    <?php include '../../php/inc/adminheader.inc.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/adminheader.inc.php'; ?>
     
     <section class="admin" id="<?php htmlout($action); ?>">
+      <div class="content_text">
         <h2><?php htmlout($pageTitle); ?></h2>
         <p>Files must be JPEG format.<br>
                 Optimal width: 600px.</p>
@@ -37,10 +38,11 @@ include_once '../../php/inc/helpers.inc.php';
             </div>
         </form>
         <p><a href="../index.php">Return to admin home.</a></p>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/admin/logout.inc.html.php'; ?>
+      </div>
     </section>
     
-    <?php include '../../php/inc/footer.inc.php'; ?>
-    <?php include '../logout.inc.html.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/footer.inc.php'; ?>
     
 </body>
 </html>

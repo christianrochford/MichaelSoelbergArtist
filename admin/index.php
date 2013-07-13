@@ -9,9 +9,10 @@
 </head>
 <body>
 
-    <?php include '../php/inc/adminTopHeader.inc.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/adminTopHeader.inc.php'; ?>
     
     <section class="admin" id="admin">
+      <div class="content_text">
         <h2>Site Management System</h2>
         <ul>
             <li><a href="home/">Manage Home Page</a></li>
@@ -19,6 +20,7 @@
             <li><a href="about/">Manage About Page</a></li>
             <li><a href="contact/">Manage Contact Page</a></li>
         </ul>
+      </div>
     </section>
     
 </body>

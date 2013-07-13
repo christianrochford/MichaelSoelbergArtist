@@ -50,6 +50,9 @@ header{
             width: 100%;
             float: none;                        
         }
+        @include breakpoint(totalklein) {
+            font-size: 2em;                        
+        }
     }
 }
 
@@ -85,32 +88,25 @@ header{
 
 //////////content//////////
 
-.centered{
-    width: 40%;
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    @include breakpoint(klein) {
-                                top: 150px;
-                                width: 60%;}
+#home_image{
+    width: 100%;
+    float: left;
+}
+
+.centered {
+  width: 33.33333%;
+  margin: 20px 33.33333%; 
+  @include breakpoint(klein) {
+            width: 50%;
+            margin: 20px 25%;                        
+        }
 }
 
 #about, #contact, #login, .admin, #error{
-    width: 50%;
-    position: absolute;
-    top: 0;
-    right: 25%;
-    margin-top: 170px;
-    @include breakpoint(klein) {
-                                width: 80%;
-                                position: relative;
-                                right: 0;
-                                margin: 50px 10% 0;}
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    min-height: 300px;
     h2{
         font-family: 'ComfortaaThin', Arial, Helvetica, sans-serif;
         @include adjust-font-size-to(30px);
@@ -133,19 +129,25 @@ header{
     }
 }
 
-#gallery{
-    width: 90%;
-    position: absolute;
-    top: 100px;
-    left: 5%;
-    @include breakpoint(klein) {
-                                top: 120px;}
+.content_text{
+    width: 50%;
+    background: green;
     @include breakpoint(ganzklein) {
-                                width: 80%;
-                                right: 0;
-                                margin: 120px 10% 0;
-                                top: 0;
-                                left: 0;}
+                                width: 90%;
+                                margin: 0 5%;}
+}
+#work{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+#gallery{
+    width: 100%;
+    #container{
+        margin-left: 5%;
+        @include breakpoint(ganzklein) {
+                                margin-left: 0;}
+    }
     .item {
     width: 160px;
     height: 160px;
@@ -204,7 +206,11 @@ header{
                                 width: 80%;
                                 margin: 0 10%;
                                 }
+        @include breakpoint(ganzklein) {
+                                top: -50px;
+                                }
         }
+
     
     .reveal-modal .close-reveal-modal {
         font-size: 22px;
@@ -216,6 +222,9 @@ header{
         text-shadow: 0 -1px 1px rbga(0,0,0,.6);
         font-weight: bold;
         cursor: pointer;
+        &:hover{
+            text-decoration: none;
+        }
         }
 
 //////////admin//////////
@@ -223,6 +232,9 @@ header{
 .admin ul, .admin p, .admin form, #about p, #contact p{
     margin: rhythm(1, 30px) 10px 0;
     line-height: 3em;
+    @include breakpoint(ganzklein) {
+                                line-height: 1.5em;
+                                }
 }
 
 #about.admin form{
@@ -247,7 +259,7 @@ header{
     }
 }
 #login form{
-    width: 300px;
+    width: 250px;
     position: relative;
     input#username, input#password{
         width: 150px;
@@ -296,7 +308,7 @@ header{
         top: 10px;
     }
     #addPainting{
-        top: 350px;
+        top: 315px;
         left: 0;
     }
 }
@@ -340,14 +352,9 @@ header{
 //////////footer//////////
 
 footer{
-    width: 20%;
+    width: 100%;
     height: 50px;
-    min-width: 250px;
-    position: absolute;
-    bottom: 0;
-    @include breakpoint(klein) {
-                                width: 100%;
-                                }
+    float: left;
     #copy{
         color: $heading-color;
         text-transform: uppercase;
@@ -357,16 +364,6 @@ footer{
         padding: 20px 0;
     }
 }
-#about-content{
-    footer{
-        @include breakpoint(klein) {
-                                position: relative;
-                                }
-    }
-}
-#work-content{
-    footer{
-        display: none;
-    }
-}
+
+
 

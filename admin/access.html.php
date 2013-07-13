@@ -43,7 +43,7 @@ function userIsLoggedIn() {
 }
 
 function databaseContainsUser($username, $password) {
-    include '../../php/inc/db.inc.php';
+    include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
     try {
         $sql = 'SELECT COUNT(*) FROM user WHERE username = :username AND password = :password';
         $s = $pdo->prepare($sql);
@@ -53,7 +53,7 @@ function databaseContainsUser($username, $password) {
     }
     catch (PDOException $e) {
         $error = 'Error searching for user.';
-        include '../php/error.html.php';
+        include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
         exit();
     }
     $row = $s->fetch();

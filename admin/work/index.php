@@ -1,9 +1,9 @@
 <?php 
 
-include '../../php/inc/magicquotes.inc.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/magicquotes.inc.php'; 
 require_once '../access.html.php';
 if (!userIsLoggedIn()) {
-    include '../login.php';
+    include $_SERVER['DOCUMENT_ROOT'] . '/admin/login.php';
     exit(); 
 }
 
@@ -15,16 +15,16 @@ if (isset($_GET['add'])) {
   $description = '';
   $id = '';
   $button = 'Add Painting';
-  include 'form1.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/admin/work/form1.html.php';
 exit();
 }
 
 if (isset($_GET['addform']) && ($_POST['filename'] == "")) {
   $error = 'Please compelte the form and upload a photo.';
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
 } elseif (isset($_GET['addform']) && ($_POST['filename'] != "")) {
-  include '../../php/inc/db.inc.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
 try {
     $sql = 'INSERT INTO work SET
         filename = :filename,
@@ -36,7 +36,7 @@ try {
   }
   catch (PDOException $e) {
     $error = 'Error adding submitted painting.';
-    include '../../php/error.html.php';
+    include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
     exit();
   }
 
@@ -77,63 +77,16 @@ if ( isset( $_FILES["file"] ) and $_FILES["file"]["error"] == UPLOAD_ERR_OK ) {
       $message = "Please contact your server administrator for help.";
   }
   $error =  "<p>Sorry, there was a problem uploading the image. $error</p>";
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
   }
-header('Location: .');
-exit(); }
-
-
-// Edit existing painting
-if (isset($_POST['action']) and $_POST['action'] == 'Edit') {
-  include '../../php/inc/db.inc.php';
-try {
-    $sql = 'SELECT id, filename, description FROM work WHERE id = :id';
-    $s = $pdo->prepare($sql);
-    $s->bindValue(':id', $_POST['id']);
-    $s->execute();
-  }
-  catch (PDOException $e) {
-    $error = 'Error fetching painting details.';
-    include '../../php/error.html.php';
-    exit();
-  }
-$row = $s->fetch();
-  $pageTitle = 'Edit Paintings';
-  $action = 'editform';
-  $filename = $row['filename'];
-  $description = $row['description'];
-  $id = $row['id'];
-  $button = 'Update Painting';
-  include 'form2.html.php';
-exit(); }
-
-if (isset($_GET['editform'])) {
-  include '../../php/inc/db.inc.php';
-try {
-    $sql = 'UPDATE work SET
-        filename = :filename,
-        description = :description
-        WHERE id = :id';
-    $s = $pdo->prepare($sql);
-    $s->bindValue(':id', $_POST['id']);
-    $s->bindValue(':filename', $_POST['filename']);
-    $s->bindValue(':description', $_POST['description']);
-    $s->execute();
-  }
-  catch (PDOException $e)
-  {
-    $error = 'Error updating submitted painting.';
-    include '../../php/error.html.php';
-    exit();
-}
 header('Location: .');
 exit(); }
 
 // Delete existing painting
 if (isset($_POST['action']) and $_POST['action'] == 'Delete')
 {
-  include '../../php/inc/db.inc.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
   // Get paintings
   try
   {
@@ -145,7 +98,7 @@ if (isset($_POST['action']) and $_POST['action'] == 'Delete')
 catch (PDOException $e)
 {
   $error = 'Error getting paintings to delete.';
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
 }
 $result = $s->fetchAll();
@@ -165,16 +118,15 @@ try
 catch (PDOException $e)
 {
   $error = 'Error deleting paintings.';
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
 }
-unlink("../../img/" + $_POST['filename']);
 header('Location: .');
 exit(); }
 
 // Display all paintings in database
 
-include '../../php/inc/db.inc.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
 
 try {
   $result = $pdo->query('SELECT id, filename, description FROM work');
@@ -182,7 +134,7 @@ try {
 catch (PDOException $e)
 {
   $error = 'Error fetching paintings from the database!';
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
 }
 foreach ($result as $row)
@@ -190,6 +142,6 @@ foreach ($result as $row)
   $paintings[] = array('id' => $row['id'], 'name' => $row['filename'], 'description' => $row['description']);
 }
 
-include 'work.html.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/admin/work/work.html.php';
 
 ?>

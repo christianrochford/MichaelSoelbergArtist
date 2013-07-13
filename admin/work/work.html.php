@@ -1,5 +1,5 @@
 <?php
-include '../../php/inc/helpers.inc.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/helpers.inc.php'; 
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,9 +12,10 @@ include '../../php/inc/helpers.inc.php';
 </head>
 <body>
     
-    <?php include '../../php/inc/adminheader.inc.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/adminheader.inc.php'; ?>
     
     <section class="admin" id="work">
+     <div class="content_text">
       <h2>Manage Paintings</h2>
       <p><a href="?add">Add new painting</a></p>
       <ul>
@@ -25,7 +26,6 @@ include '../../php/inc/helpers.inc.php';
                 <?php htmlout($painting['name']); ?>
                 <input type="hidden" name="id" value="<?php
                     echo $painting['id']; ?>">
-                <input type="submit" name="action" class="css3button" value="Edit">
                 <input type="submit" name="action" class="css3button" value="Delete">
               </div>
             </form>
@@ -33,7 +33,8 @@ include '../../php/inc/helpers.inc.php';
         <?php endforeach; ?>
       </ul>
       <p><a href="../index.php">Return to admin home.</a></p>
-      <?php include '../logout.inc.html.php'; ?>
+      <?php include $_SERVER['DOCUMENT_ROOT'] . '/admin/logout.inc.html.php'; ?>
+     </div>
     </section>
     
   </body>

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <?php include 'inc/adminheader.inc.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/adminheader.inc.php'; ?>
 
     <section id="error">
         <h2>There was an error</h2>

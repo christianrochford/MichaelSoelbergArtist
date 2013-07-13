@@ -1,13 +1,13 @@
 <?php 
 
-include '../../php/inc/magicquotes.inc.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/magicquotes.inc.php'; 
 require_once '../access.html.php';
 if (!userIsLoggedIn()) {
-    include '../login.php';
+    include $_SERVER['DOCUMENT_ROOT'] . '/admin/login.php';
     exit(); 
 }
 
-include '../../php/inc/db.inc.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
 
 // Set Homepage background
 if (isset($_POST['set'])) {
@@ -20,14 +20,14 @@ filename = :filename';
     }
     catch (PDOException $e) {
       $error = 'Error selecting painting from database.';
-      include '../../php/error.html.php';
+      include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
       exit();
     }
 }
 
 // Display image options
 
-include '../../php/inc/db.inc.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/php/inc/db.inc.php';
 
 try {
   $result = $pdo->query('SELECT id, filename FROM work');
@@ -35,13 +35,13 @@ try {
 catch (PDOException $e)
 {
   $error = 'Error fetching paintings from the database!';
-  include '../../php/error.html.php';
+  include $_SERVER['DOCUMENT_ROOT'] . '/php/error.html.php';
   exit();
 }
 foreach ($result as $row)
 {
   $paintings[] = array('id' => $row['id'], 'filename' => $row['filename']);
 }
-include 'home.html.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/admin/home/home.html.php';
 
 ?>
