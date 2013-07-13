@@ -11,16 +11,3 @@ catch (PDOException $e)
   include $_SERVER['DOCUMENT_ROOT'] .'/php/error.html.php';
   exit();
 }
-
-/*
-
-godaddy.com
-username: MichaelTSoelberg
-pass: Christian1
-
-database
-name: Soelberg
-username: Soelberg
-pass: Michael#1
-
-*/
